@@ -1,0 +1,12 @@
+REQUIREMENTS:
+Nodejs
+MongoDB
+
+Instructions To Run:
+- Install all the required software
+- Open Terminal or CMD in the netflix-clone folder and run
+  npm install (if you have not installed all the depedencies)
+  npm run seed:media
+  npm run seed:lib
+  npm run start
+

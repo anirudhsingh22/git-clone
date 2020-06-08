@@ -1,0 +1,9 @@
+Module 1 - Intro
+- OOP
+- Why Python
+- Split Data Types and Data Sctructures
+- In Built Functions
+- Data Handling - (Outlier, Feature Selection)
+- Handling Missing Values
+- Sorting Searching Summarizing
+- Linear Regression, Logistic Regression, Decision Tree, Random Forest

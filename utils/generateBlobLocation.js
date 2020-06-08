@@ -1,0 +1,1 @@
+module.exports = name => `http://localhost:8000/${name}`

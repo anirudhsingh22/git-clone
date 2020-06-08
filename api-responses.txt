@@ -1,0 +1,88 @@
+url: http://localhost:8000/content?genre=fantasy
+response:
+
+-- TO SEARCH BY GENRE --
+[
+  {
+    "_id":2,
+    "name":"Lord of the rings: Fellowship of the rind",
+    "release_date":"2001-06-22T18:30:00.000Z",
+    "genre":"Fantasy",
+    "rating":8.5,
+    "view_count":4200,
+    "__v":0
+  },
+  {
+    "_id":3,
+    "name":"Lord of the rings: Two Towers",
+    "release_date":"2002-08-22T18:30:00.000Z",
+    "genre":"Fantasy",
+    "rating":8.2,
+    "view_count":4800,
+    "__v":0
+  },
+  {
+    "_id":4,
+    "name":"Lord of the rings: Return of the king",
+    "release_date":"2003-12-22T18:30:00.000Z",
+    "genre":"Fantasy",
+    "rating":9,
+    "view_count":5400,
+    "__v":0
+  }
+]
+
+-- TO SEARCH BY NAME --
+url: http://localhost:8000/search?q=dark
+response:
+
+[
+  {
+    "_id":1,
+    "name":"The Dark Knight",
+    "release_date":"2008-06-22T18:30:00.000Z",
+    "genre":"Action",
+    "rating":9,
+    "view_count":5000,
+    "__v":0
+  },
+  {
+    "_id":5,
+    "name":"Dark",
+    "release_date":"2018-06-26T18:30:00.000Z",
+    "genre":"Mystery",
+    "rating":8.5,
+    "view_count":2000,"__v":0
+  }
+]
+
+-- TO GET TOP VIDEOS SORTED BY VIEW_COUNT
+http://localhost:8000/videos?limit=2
+[
+  {
+    "_id":6,
+    "name":"Suits",
+    "release_date":"2008-06-11T18:30:00.000Z",
+    "genre":"Drama",
+    "rating":8.2,
+    "view_count":5800,
+    "__v":0
+  },
+  {
+    "_id":4,
+    "name":"Lord of the rings: Return of the king",
+    "release_date":"2003-12-22T18:30:00.000Z",
+    "genre":"Fantasy",
+    "rating":9,
+    "view_count":5400,
+    "__v":0
+  }
+]
+
+-- TO GET BLOB URL OF A VIDEO --
+url: http://localhost:8000/library?media_id=1
+response:
+{
+  "location":
+  "http://localhost:8000/the_dark_knight.mp4"
+}
